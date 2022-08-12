@@ -10,7 +10,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 # amazon database
-DATABASE_URL = "postgresql+psycopg2://postgres_dw:!Netcondwproject$#2022!@tstage-dw-project.c1n70u3mmeqb.us-east-1.rds.amazonaws.com:5432/stage-dw-project"
+DATABASE_URL = "postgresql://postgres_dw:!Netcondwproject$#2022!@stage-dw-project.c1n70u3mmeqb.us-east-1.rds.amazonaws.com:5432/postgres"
 
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
